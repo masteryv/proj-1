@@ -1,0 +1,190 @@
+body {
+    font-family: fantasy;
+    font-size: 16px;
+    text-align: center;
+    color: #333;
+    line-height: 1.6; 
+    background: #00C9FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+}
+
+.title {
+    color: greenyellow;
+    font-weight: bold;
+    text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  }
+
+#tlMov{
+    font-size: 65px;
+}
+
+@media screen and (max-width: 376px) {
+
+    #tlMov{
+        font-size: 35px;
+    }
+
+    .titleFavImg{
+        font-size: 20px;
+    }
+
+}
+
+.titleFavImg {
+    font-family: fantasy;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    text-shadow:1px 9px 2px black, 10px 1px 25px red, 0 0 10px darkblue;
+}
+
+p {
+    margin-bottom: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Layout och positionering */
+header, footer {
+    background-color: lightpink;
+    padding: 20px;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 15px;
+}
+
+
+main.homeMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    width: auto;
+}
+
+article {
+    width: 80%;
+    height: auto;
+    margin:10px;
+    text-align: center;
+    font-size: 26px;
+}
+
+
+aside.clip {
+    text-align: center;
+}
+
+button{
+    color: green;
+    background-color: lightsalmon;
+    border-radius: 10px 0 10px 0;
+    border: solid 1px black;
+}
+
+button:hover {
+    color: white;
+    background-color: blue;
+}
+
+/* Navigeringsmeny */
+
+nav ul {
+    list-style-type: none;
+    text-align: left;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: black;
+    font-size: 30px; 
+    border: solid 5px white;
+    border-radius: 0 15px 15px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px; 
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: white;
+    font-size: 30px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    background-color: lightgreen;
+    color: black;
+    font-size: 52px;
+}
+
+@media screen and (max-width: 376px) {
+    nav ul {
+        font-size: 16px;
+        background-color: blue;
+    }
+
+    nav ul li {
+        margin-right: 15px;
+        margin-bottom: 12px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+
+img.homeImg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 50px auto;
+}
+
+.aboutImg img {
+    max-width: 100%; /* Ensure images don't exceed their container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevents extra space underneath inline images */
+    margin: 0 auto; /* Center the images horizontally */
+    border: solid 5px white;
+  }
+
+  @media (min-width: 650px) {
+    .aboutImg img {
+      width: 900px; /* Set a width for larger screens */
+    }
+  }
+
+  @media (min-width: 465px) and (max-width: 649px) {
+    .aboutImg img {
+      width: 800px; /* Set a different width for mid-sized screens */
+    }
+  }
+  
+
+@media screen and (max-width: 375px) {
+    header, footer {
+        padding: 10px;
+    }
+
+
+}
+
+table, th, td {
+    border:1px solid rgb(76, 0, 255);
+  }

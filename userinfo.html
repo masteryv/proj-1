@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your favorite things in life</title>
+    <link rel="icon" type="image/x-icon" href="img/moai.jpg">
+    <meta charset="UTF-8">
+    <meta name="description" content="Inlämningsuppgift inom Web1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<!-- Här kommer vara typ som min produkt sida, men istället användare måste fylla frågor  -->
+<body>
+    <header>
+        <h1>Tell me your favorite things in life!</h1>
+        <details>
+            <summary><em>Click for more information!</em></summary>
+            <p>I want you to answers some easy questions. It only take less than 3 minets and it mean so much for me. So thank you!</p>
+            <img src="https://media.tenor.com/HCJnS_GSJk4AAAAi/like-gif.gif" alt="Like gift" height="200" width="150">
+        </details>
+        <br><br>
+    </header>
+
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home!</a></li>
+                <li><a href="contact.html">Contact!</a></li>
+                <li><a href="about.html">About me!</a></li>
+                <li><a href="userinfo.html">Your favorite things!</a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <!-- Här anväder jag av, mailto, fieldset, legend, olika typer av input
+    som radio, text, checkbox eller nummer, select med optgroup och option, och till sist
+ett input med typen submit -->
+    <main>
+
+        <form action="mailto:arshia.yavari@elev.ga.lbs.se">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label for="fname">First Name: </label>
+                <Input type="text" id="fname">
+                <label for="lname">Last name: </label>
+                <Input type="text" id="lname">
+                <br><br>
+                <label for="number">Number: </label>
+                <input type="number" id="number">
+                <label for="email">Email: </label>
+                <input type="email"  id="email">
+            </fieldset>
+        <br>
+            <fieldset>
+                <legend>Your favorite films!</legend>
+                <label for="mors">What would you rather: </label>
+                <input type="radio" name="mors" id="mors">Movies
+                <input type="radio" name="mors" id="mors2">Series
+                <input type="radio" name="mors" id="mors3">Mini series
+                <br><br>
+                <label for="favmovie">Write your most 3 favorite movies!</label><br>
+                1<input type="text" id="favmovie" name="favmovie">
+                2<input type="text" id="favmovie2" name="favmovie">
+                3<input type="text" id="favmovie3" name="favmovie">
+                <br><br>
+                <label for="favserie">Write your most 3 favorite series!</label><br>
+                1<input type="text" id="favserie" name="favserie">
+                2<input type="text" id="favserie2" name="favserie">
+                3<input type="text" id="favserie3" name="favserie">
+                <br><br>
+                <label for="favactor">Tell me your favorite actor!</label>
+                <input type="text" name="favactor" id="favactor">
+            </fieldset>
+        <br>
+            <fieldset>
+                <legend>It's time to talk about books!</legend>
+                <label for="booksthatread">How many books do you have read?</label>
+                <input type="radio" id="booksthatread" name="booksthatread">1-10
+                <input type="radio" id="booksthatread2" name="booksthatread">10-30
+                <input type="radio" id="booksthatread3" name="booksthatread">30-50
+                <input type="radio" id="booksthatread4" name="booksthatread">50-...
+                <br><br>
+                <label for="favbook">Write your most 3 favorite series!</label><br>
+                1<input type="text" id="favbook" name="favbook">
+                2<input type="text" id="favbook2" name="favbook">
+                3<input type="text" id="favbook3" name="favbook">
+                <br><br>
+                <label for="lisorread">Whould you rather Listen to a book or read a book? If like both, then chose both!</label>
+                <input type="checkbox" id="lisorread" name="lisorread">Digital books
+                <input type="checkbox" id="lisorread2" name="lisorread">Reading books
+            </fieldset>
+        <br>
+            <fieldset>
+                <legend>Global things</legend>
+                <label for="favfood">What is your favorite food?</label>
+                <input type="text" name="favfood" id="favfood">
+                <br>
+                <label for="favlang">What is your favorite language?</label>
+                <input type="text" name="favlang" id="favlang">
+                <br>
+                <label for="animal">Choose a animal:</label>
+                <select name="animal" id="animal">
+                 <optgroup label="Wild animals">
+                   <option value="lion">Lion</option>
+                   <option value="wolf">Wolf</option>
+                </optgroup>
+                <optgroup label="Domesticated animals">
+                  <option value="dog">Dog</option>
+                  <option value="cat">Cat</option>
+                </optgroup>
+               </select>
+               <br><br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Submit">
+            <br>
+        </form>
+
+        <footer>
+            &copy; My beautiful website!
+        </footer>
+
+    </main>
+    
+</body>
+</html>

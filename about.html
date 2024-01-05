@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About</title>
+        <link rel="icon" type="image/x-icon" href="img/moai.jpg">
+        <meta charset="UTF-8">
+        <meta name="description" content="Inlämningsuppgift inom Web1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
+    </head>
+<!-- Här är about sida och användare kan se vad är mina favorite saker -->
+    <body>
+        <header>
+            <h1 class="title">My farvorite things in life</h1>
+        </header>
+
+           <!-- Här använder jag av ul som betyder unordered lista och det betyder den kommer använda punkt istället av 1,2 och 3 -->
+
+        <aside>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Home!</a></li>
+                  <li><a href="contact.html">Contact!</a></li>
+                  <li><a href="about.html">About me!</a></li>
+                  <li><a href="userinfo.html">Your favorite things!</a></li>
+              </ul>
+          </nav>
+      </aside>
+        
+        <main>
+
+                <!-- Här använder jag, strong för att göra min text tjockare.  -->
+
+          <section>
+            <h2 class="title" id="tlMov">My favorite films</h2>
+
+            <strong class="titleFavImg">The Godfather</strong>
+            <picture class="aboutImg">
+              <source media="(min-width: 650px)" srcset="img/godfatherBig.jpg">
+              <source media="(min-width: 465px)" srcset="img/godfatherMid.jpg">
+              <img src="img/godfatherMin.jpg" alt="Godfather">
+            </picture>            
+
+            <strong class="titleFavImg">Oppenheimer</strong>
+            <picture class="aboutImg">
+              <source media="(min-width: 650px)" srcset="img/oppenheimerBig.jpg">
+              <source media="(min-width: 465px)" srcset="img/OppenheimerMid.jpg">
+              <img src="img/oppenheimerMin.jpg" alt="Oppenheimer">
+            </picture>
+
+            <strong class="titleFavImg">Pirates of the Caribbean</strong>
+            <picture class="aboutImg">
+              <source media="(min-width: 650px)" srcset="img/PoCBig.jpg">
+              <source media="(min-width: 465px)" srcset="img/PoCMid.jpg">
+              <img src="img/PoCMin.jpg" alt="Pirates of the Caribbean">
+            </picture>
+          </section>
+
+                <!-- Här använder jag, ett tabel som kommer ha olika länder -->
+
+          <section>
+            <h2>My favorite countrys</h2>
+              <table style="width: 100%;">
+                  <tr>
+                       <th>Asia</th>
+                       <th>Europa</th>
+                       <th>South America</th>
+                      </tr>
+                      <tr>
+                        <td>Japan</td>
+                        <td>Italy</td>
+                        <td>Brazil</td>
+                      </tr>
+                      <tr>
+                        <td>South korea</td>
+                        <td>Sweden</td>
+                        <td>Argentina</td>
+                      </tr>
+                </table>
+            </section>
+
+            
+        </main>
+
+        <footer>
+          &copy; My beautiful website!
+        </footer>
+        
+    </body>
+
+</html>
