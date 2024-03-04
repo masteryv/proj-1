@@ -6,12 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="This page is about beautiful things in life!">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style2.css">
         <title>Contact</title>
     </head>
     <!-- Här kommer vara min contact sida och här användare kan kontakta med mig -->
 <body>
     <header>
-        <h1>Contact!</h1>
+        <h1 class="title">Contact!</h1>
     </header>
     <aside>
         <nav>
@@ -26,37 +27,28 @@
 
     <main>
         <!-- Här använder jag, fieldset,span och legend. -->
-        <h3>If you want <span style="color: blue;">contact</span> us fill the form!</h3>
+        <h3 class="title" id="tlContact">If you want <span style=" font-style: italic;">contact</span> us fill the form!</h3>
         <form action="mailto:arshia.yavari@elev.ga.lbs.se">
         <fieldset>
             <legend>Personal information</legend>
             <label for="fname">First Name: </label>
-            <Input type="text" id="fname">
+            <Input type="text" id="fname" required>
             <label for="lname">Last name: </label>
-            <Input type="text" id="lname">
-            <br><br>
+            <Input type="text" id="lname" required>
             <label for="number">Number: </label>
             <input type="number" id="number" value="number">
             <label for="email">Email: </label>
-            <input type="email"  id="email">
+            <input type="email"  id="email" required>
         </fieldset>
         <fieldset>
             <legend>Your text</legend>
             <label for="usertext">write something for me:</label>
-            <br>
             <textarea id="usertext" name="usertext"></textarea>
-            <br>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         </fieldset>
         </form>
     </main>
-
-        <!-- Här använder jag, div, och iframe för att spela ett external video från facebook -->
-
-    <div>  
-        <iframe src="https://www.facebook.com/100006652336470/videos/239953131389264/" title="Fight between friends"></iframe>
-    </div>
 
     <footer>
         &copy; My beautiful website!
