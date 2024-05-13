@@ -4,24 +4,39 @@ body {
     text-align: center;
     color: black;
     line-height: 1.6;
-
     /*Här med hjälp av https://uigradients.com/ jag har skapat ett linear background*/
-    background: #00C9FF;
-    background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF);
-    background: linear-gradient(to left, #92FE9D, #00C9FF);
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+    
 }
 
 header, footer {
-    background-color: lightpink;
     padding: 20px;
     text-align: center;
-    border: solid 5px black;
-    border-radius: 15px;
+    border: solid 1px white;
+    border-radius: 50px 0 50px 0;
+    
+}
+
+.AnimBackG{
+    background-image: url(img/AnimeBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+@media screen and (max-width: 376px) {
+
+    .AnimBackG{
+        background-repeat:round;
+    }
+
 }
 
 footer{
     font-style: italic;
-    color: black;
+    color: white;
     text-decoration: underline;
 }
 
@@ -42,6 +57,10 @@ h1, h2, h3 {
     font-weight: bold;
     text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   }
+
+h3.title{
+    color: white;
+}
 
 #tlMov{
     font-size: 65px;
@@ -72,6 +91,12 @@ p {
     font-family: 'Times New Roman', Times, serif;
 }
 
+main{
+
+    font-family: fantasy;
+}
+
+
 main.homeMain {
     display: flex;
     flex-direction: column;
@@ -79,6 +104,7 @@ main.homeMain {
     align-content: space-around;
     align-items: center;
     width: auto;
+    color: white;
 }
 
 article {
@@ -89,26 +115,64 @@ article {
     font-size: 26px;
 }
 
-button{
-    color: green;
-    background-color: lightsalmon;
-    border-radius: 10px 0 10px 0;
-    border: solid 1px black;
-}
 
-button:hover {
+
+button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
     color: white;
-    background-color: blue;
-}
+    background-color: brown;
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   button::before {
+    left: -10px;
+    background: yellow;
+   }
+   
+   button::after {
+    right: -10px;
+    background: blue;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 58%;
+   }
+   
+
+
+
+
 
 nav ul {
     list-style-type: none;
+    font-family: fantasy;
     text-align: left;
     margin-top: 5px;
     padding: 10px;
-    background-color: black;
+    background-color: white;
     font-size: 30px; 
-    border: solid 5px white;
+    border: solid 1px white;
     border-radius: 0 15px 15px 0;
 }
 
@@ -120,13 +184,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 30px; 
 }
 
 nav ul li a:hover {
-    color: black;
-    background-color: white;
+    color: white;
+    background-color: black;
+    border-radius: 5px 5px 5px 5px;
 }
 
 nav ul li a.active {
@@ -139,7 +204,6 @@ nav ul li a.active {
 @media screen and (max-width: 376px) {
     nav ul {
         font-size: 16px;
-        background-color: blue;
     }
 
     nav ul li {
@@ -296,6 +360,7 @@ input[type="reset"]:hover {
 video {
     width: 320px;
     height: auto;
+    border-radius: 40% 40% 40% 40%;
 }
 
 @media (max-width: 376px) {
@@ -303,4 +368,10 @@ video {
         width: 160px;
         height: auto;
     }
+}
+
+#timos{
+     /* Change this value to your desired width */
+    height: 500px; /* Change this value to your desired height */
+    object-fit: cover; /* Maintain aspect ratio */
 }
