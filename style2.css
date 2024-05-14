@@ -16,12 +16,12 @@ header, footer {
     padding: 20px;
     text-align: center;
     border: solid 1px white;
-    border-radius: 50px 0 50px 0;
+    border-radius: 15px 15px 15px 15px;
     
 }
 
 .AnimBackG{
-    background-image: url(img/AnimeBackground.jpg);
+    background-image: url(img/gogog.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -53,37 +53,13 @@ h1, h2, h3 {
 }
 
 .title {
-    color: greenyellow;
+    color: white;
     font-weight: bold;
     text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
   }
 
 h3.title{
     color: white;
-}
-
-#tlMov{
-    font-size: 65px;
-}
-
-.titleFavImg {
-    font-family: fantasy;
-    font-size: 40px;
-    color: white;
-    font-weight: bold;
-    text-shadow: 1px 9px 2px black, 10px 1px 25px red, 0 0 10px darkblue;
-}
-
-@media screen and (max-width: 376px) {
-
-    #tlMov {
-        font-size: 35px;
-    }
-
-    .titleFavImg {
-        font-size: 20px;
-    }
-
 }
 
 p {
@@ -106,6 +82,7 @@ main.homeMain {
     width: auto;
     color: white;
 }
+ 
 
 article {
     width: 80%;
@@ -115,7 +92,13 @@ article {
     font-size: 26px;
 }
 
-
+article.animeTxt{
+    align-items: center;
+    font-weight: bold;
+    font-style: italic;
+    width: auto;
+    color: white;
+}
 
 button {
     display: inline-block;
@@ -158,10 +141,6 @@ button {
    button:hover::after {
     width: 58%;
    }
-   
-
-
-
 
 
 nav ul {
@@ -223,40 +202,6 @@ img.homeImg {
     margin: 50px auto;
 }
 
-.aboutImg img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border: solid 5px white;
-  }
-
-  @media (min-width: 650px) {
-    .aboutImg img {
-      width: 900px;
-    }
-  }
-
-  @media (min-width: 465px) and (max-width: 649px) {
-    .aboutImg img {
-      width: 800px;
-    }
-  }
-
-table, th, td {
-    border:1px solid lightskyblue;
-    background-color: white;
-  }
-
-th{
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-.tabStyl{
-    margin-bottom: 15px;
-}
-
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -277,7 +222,7 @@ fieldset {
 legend {
     font-weight: bold;
     margin-bottom: 10px;
-    color: lime;
+    color: white;
     text-shadow:1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 
@@ -357,21 +302,8 @@ input[type="reset"]:hover {
     }
 }
 
-video {
-    width: 320px;
-    height: auto;
-    border-radius: 40% 40% 40% 40%;
-}
-
-@media (max-width: 376px) {
-    video{
-        width: 160px;
-        height: auto;
-    }
-}
-
 #timos{
-     /* Change this value to your desired width */
-    height: 500px; /* Change this value to your desired height */
-    object-fit: cover; /* Maintain aspect ratio */
+     
+    height: 600px;
+    object-fit: cover; 
 }
