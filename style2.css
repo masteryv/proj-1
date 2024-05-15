@@ -16,8 +16,7 @@ header, footer {
     padding: 20px;
     text-align: center;
     border: solid 1px white;
-    border-radius: 15px 15px 15px 15px;
-    
+    border-radius: 15px 15px 15px 15px;    
 }
 
 .AnimBackG{
@@ -50,6 +49,10 @@ h1, h2, h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color: black;
+}
+
+h1.title{
+    margin: 0 0 0 0;
 }
 
 .title {
@@ -92,12 +95,16 @@ article {
     font-size: 26px;
 }
 
-article.animeTxt{
+article, p.animeTxt{
     align-items: center;
     font-weight: bold;
     font-style: italic;
     width: auto;
     color: white;
+}
+
+#TopanimeLink{
+    font-size: 26px;
 }
 
 button {
