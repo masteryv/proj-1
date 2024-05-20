@@ -168,6 +168,10 @@ nav ul li {
     margin-bottom: 15px;
 }
 
+li > a {
+    padding: 10px;
+}
+
 nav ul li a {
     text-decoration: none;
     color: black;
@@ -175,8 +179,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: gray;
     border-radius: 5px 5px 5px 5px;
 }
 
@@ -200,6 +204,10 @@ nav ul li a.active {
     nav ul li a {
         font-size: 16px;
     }
+
+    li > a {
+        padding: 0;
+    }
 }
 
 img.homeImg {
@@ -216,7 +224,7 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px black;
-    background-color: bisque;
+    background-color: skyblue;
 }
 
 fieldset {
