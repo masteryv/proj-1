@@ -5,5 +5,3 @@ Anish serves as a haven for anime enthusiasts seeking comprehensive information 
 ### Who are behind Anish?
 
 Behind Anish stands a robust team led by a manager known as Amigo. Amigo, a high school student, possesses a fervent passion for indulging in the realms of anime and manga. With an adept understanding of both mediums, Amigo infuses creativity and strategic thinking into the team's endeavors. His leadership style, though unconventional given his age, radiates with innovative ideas and a profound commitment to excellence. Moreover, his penchant for immersive storytelling, gleaned from his extensive consumption of anime and manga, imbues the team with a unique perspective, allowing them to approach challenges with fresh insights and imaginative solutions.
-
-### How it could get better?
