@@ -322,3 +322,14 @@ input[type="reset"]:hover {
     height: 600px;
     object-fit: cover; 
 }
+
+.Scrollbtn{
+    background-color: aqua;
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    font-family: fantasy;
+}
+
+#moreInfo{
+    font-family: fantasy;
+}
