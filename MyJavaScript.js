@@ -31,7 +31,7 @@ document.querySelector("h1").onmouseover = event => {
 document.getElementById('moreInfo').addEventListener('click', function(event) {
   event.preventDefault();
 
-  const userConfirmed = confirm("You are being redirected to more information about anime and animation. Click OK to proceed.");
+  const userConfirmed = confirm("You are being redirected to another website about anime and animation. Click OK to proceed.");
 
   if (userConfirmed) {
       window.location.href = 'https://professional3dservices.com/blog/anime-vs-animation.html';
