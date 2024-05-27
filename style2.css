@@ -107,6 +107,7 @@ article, p.animeTxt{
     font-size: 26px;
 }
 
+
 button {
     display: inline-block;
     width: 150px;
@@ -333,3 +334,8 @@ input[type="reset"]:hover {
 #moreInfo{
     font-family: fantasy;
 }
+  
+html {
+    scrollbar-width:thin;
+    scrollbar-color: yellow rgb(21, 31, 50);
+  }
